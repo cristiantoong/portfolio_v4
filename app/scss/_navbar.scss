@@ -20,6 +20,26 @@
       max-width: 1600px;
       margin: 0 auto;
       padding: 0 4rem;
+
+      .mobile-menu {
+        padding-top: 2rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        .line {
+          display: block;
+          background: #fff;
+          width: 32px;
+          height: 2px;
+          transition: all .3s ease;
+
+          &:first-child {
+            margin-bottom: .5rem;
+          }
+        }
+      }
   }
 
   &__logo {
@@ -63,11 +83,73 @@
       }
   }
 
+ 
+
 }
+
+
+//whole page navbar
+.navbar-mobile {
+  background: #0D0D0B;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  transition: all .3s ease;
+  opacity: 0;
+  display: none;
+ 
+  &__cancel {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem;
+    margin-bottom: 5rem;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+ &__menus {
+   display: flex;
+   flex-direction: column;
+ }
+
+ &__links {
+   font-size: 4rem;
+   margin-bottom: 2rem;
+ }
+  
+
+}
+
+
 
 // js - change bg color when scroll
 .active {
   background: #0D0D0B;
   opacity: 0.80;
   transition: all 0.3s ease;
+}
+
+/* for javascript */
+.show-navbar-mobile{
+  // transform: translateX(0);
+  transition: all .3s ease;
+  display: block;
+  opacity: 1;
+}
+.hide-navbar-mobile{
+  transform: translateX(-100%);
 }

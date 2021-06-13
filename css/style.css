@@ -121,6 +121,27 @@ a {
   padding: 0 4rem;
 }
 
+.navbar__container .mobile-menu {
+  padding-top: 2rem;
+}
+
+.navbar__container .mobile-menu:hover {
+  cursor: pointer;
+}
+
+.navbar__container .mobile-menu .line {
+  display: block;
+  background: #fff;
+  width: 32px;
+  height: 2px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.navbar__container .mobile-menu .line:first-child {
+  margin-bottom: .5rem;
+}
+
 .navbar__logo {
   width: 50px;
   height: 50px;
@@ -173,11 +194,83 @@ a {
   color: #ccc;
 }
 
+.navbar-mobile {
+  background: #0D0D0B;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  opacity: 0;
+  display: none;
+}
+
+.navbar-mobile__cancel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2rem;
+  margin-bottom: 5rem;
+}
+
+.navbar-mobile__cancel img {
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-mobile__cancel:hover {
+  cursor: pointer;
+}
+
+.navbar-mobile__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-mobile__menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar-mobile__links {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
 .active {
   background: #0D0D0B;
   opacity: 0.80;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+/* for javascript */
+.show-navbar-mobile {
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  display: block;
+  opacity: 1;
+}
+
+.hide-navbar-mobile {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 
 .hero {
@@ -226,8 +319,8 @@ a {
 
 .hero__main-secondary-heading {
   font-size: 2rem;
-  font-weight: 300;
-  margin-bottom: 20px;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
 .hero__main-tertiary-heading {
