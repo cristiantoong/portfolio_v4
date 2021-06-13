@@ -1,0 +1,30 @@
+<div class="modal">
+
+            <div class="project">
+              <div class="left-info">
+                  <img src="images/beautiful escape stylescape.jpg" alt="">
+              </div>
+
+              <div class="right-info">
+                  <h2>Beautiful Escape Private Resort</h2>
+                  <div class="technologies">
+                      <h4>TECHNOLOGIES</h4>
+                      <p>HTML</p>
+                      <p>CSS</p>
+                      <p>Javascript</p>
+                      <p>Bootstrap</p>
+                      <p>Figma</p>
+                  </div>
+
+                  <ul class="btns">
+                        <li><a href="https://github.com/cristiantoong/beautifulescaperesort" target="_blank">Github</a></li>
+                      <li><a href="https://cristiantoong.github.io/beautifulescaperesort/" target="_blank">View Site</a></li>
+                  </ul>
+              </div>
+              
+          </div>
+          <div class="mockup">
+              <img src="images/Beautiful Escape Resort Device Mockup.png" alt="">
+          </div>
+            
+        </div>

@@ -1,0 +1,73 @@
+.navbar {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s ease;
+
+
+
+  &__container {
+      display: flex;
+      justify-content: space-between;
+      
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1600px;
+      margin: 0 auto;
+      padding: 0 4rem;
+  }
+
+  &__logo {
+      width: 50px;
+      height: 50px;
+      align-self: center;
+      font-size: 2rem;
+
+
+      .img-logo {
+          width: 100%;
+          height: 100%;
+      }
+  }
+
+  &__menu {
+      display: flex;
+      align-items: center;
+      list-style: none;
+  }
+
+  &__item {
+      height: 80px;
+      cursor: pointer;
+
+  }
+
+  &__links {
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 5rem;
+      text-decoration: none;
+      height: 100%;
+      transition: all 0.3s ease;
+      font-size: 1rem;
+    
+      &:hover {
+          color: $grey;
+      }
+  }
+
+}
+
+// js - change bg color when scroll
+.active {
+  background: #0D0D0B;
+  opacity: 0.80;
+  transition: all 0.3s ease;
+}
