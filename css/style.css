@@ -213,6 +213,8 @@ a {
 .hero__main {
   position: relative;
   width: 60%;
+  padding-bottom: 6rem;
+  padding-top: 10rem;
 }
 
 .hero__main-primary-heading {
@@ -237,6 +239,20 @@ a {
 .hero__main-cta-btn--link {
   border: 1px solid #fff;
   padding: 1rem 5rem;
+}
+
+.hero__socials {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.hero__socials-link {
+  margin-right: 1rem;
+}
+
+.hero__socials-link img {
+  width: 25px;
+  height: 25px;
 }
 
 .projects {
