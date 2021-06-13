@@ -10,6 +10,7 @@ const navbar = document.querySelector('.navbar');
 const mobileMenu = document.querySelector('.mobile-menu'); 
 const navbarMobile = document.querySelector('.navbar-mobile');
 const cancelBtn = document.querySelector('.cancel-btn') 
+const navbarMobileBtns = document.querySelectorAll('.navbar-mobile__links')
 
 window.onscroll = function(){
     var scrollPos = window.scrollY;
@@ -22,10 +23,18 @@ window.onscroll = function(){
 }
 
 mobileMenu.addEventListener('click', function(){
-    navbarMobile.classList.add('show-navbar-mobile');
+    navbarMobile.classList.toggle('show-navbar-mobile');
+    console.log('ss')
 })
 
-cancelBtn.addEventListener('click', function(){
-    navbarMobile.classList.remove('show-navbar-mobile');
-})
+// cancelBtn.addEventListener('click', function(){
+//     navbarMobile.classList.remove('show-navbar-mobile');
+// })
 
+
+//closes the navbar when the link clicked
+navbarMobileBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+        navbarMobile.classList.remove('show-navbar-mobile');
+    })
+})
