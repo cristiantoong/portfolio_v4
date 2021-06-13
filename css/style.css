@@ -179,6 +179,7 @@ a {
   z-index: 99999;
   position: fixed;
   right: 50px;
+  display: none;
 }
 
 .mobile-menu:hover {
@@ -212,7 +213,7 @@ a {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   opacity: 0;
   -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
@@ -241,7 +242,7 @@ a {
 }
 
 .navbar-mobile__links {
-  font-size: 4rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -255,15 +256,18 @@ a {
 /* for javascript */
 .navbar-mobile.show-navbar-mobile {
   background: rgba(0, 0, 0, 0.9);
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
   opacity: 1;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
   z-index: 99;
 }
 
 @media screen and (max-width: 700px) {
   .navbar__menu {
     display: none;
+  }
+  .mobile-menu {
+    display: block;
   }
 }
 
@@ -340,6 +344,99 @@ a {
 .hero__socials-link img {
   width: 25px;
   height: 25px;
+}
+
+@media screen and (max-width: 850px) {
+  .hero__main {
+    width: 100%;
+  }
+  .hero__main-primary-heading {
+    font-size: 3.5rem;
+  }
+  .hero__main-secondary-heading {
+    font-size: 1.5rem;
+  }
+  .hero__main-tertiary-heading {
+    font-size: 1rem;
+  }
+  .hero__main-cta-btn--link {
+    border: 1px solid #fff;
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero__main {
+    position: relative;
+    width: 100%;
+  }
+  .hero__main-primary-heading {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+  }
+  .hero__main-secondary-heading {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  .hero__main-tertiary-heading {
+    font-size: 1rem;
+  }
+  .hero__main-cta-btn--link {
+    border: 1px solid #fff;
+    padding: 1rem 3rem;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .hero {
+    min-height: 80vh;
+  }
+  .hero__container {
+    padding: 0 5rem;
+  }
+  .hero__main {
+    position: relative;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+  .hero__main-primary-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: normal;
+  }
+  .hero__main-secondary-heading {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  .hero__main-tertiary-heading {
+    font-size: .8rem;
+  }
+  .hero__main-cta-btn--link {
+    border: 1px solid #fff;
+    padding: .8rem 2rem;
+    font-size: 1rem;
+  }
+  .hero__socials {
+    margin-top: 0;
+  }
+  .hero__socials-link img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero {
+    min-height: 80vh;
+  }
+  .hero__main {
+    padding-top: 2rem;
+  }
 }
 
 .projects {

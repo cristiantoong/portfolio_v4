@@ -38,3 +38,12 @@ navbarMobileBtns.forEach(function(btn){
         navbarMobile.classList.remove('show-navbar-mobile');
     })
 })
+
+
+//if window width >= 700px hide navbar mobile
+window.addEventListener("resize", function() {
+    var newWidth = window.innerWidth;
+    if (newWidth >= "700"){
+      navbarMobile.classList.remove('show-navbar-mobile');
+    }
+  });
