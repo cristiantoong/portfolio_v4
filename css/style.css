@@ -468,8 +468,8 @@ a {
 .projects__cards {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   grid-gap: 6rem;
 }
 
@@ -480,6 +480,8 @@ a {
 .projects__card img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .projects__card .overlay {
@@ -519,6 +521,31 @@ a {
 
 .projects__card .overlay .inner-overlay .info {
   width: 50%;
+}
+
+.projects__card .overlay .inner-overlay .info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.projects__card .overlay .inner-overlay .info .skillset {
+  margin-bottom: 3rem;
+}
+
+.projects__card .overlay .inner-overlay .info .skillset h4 {
+  font-size: 1.2rem;
+}
+
+.projects__card .overlay .inner-overlay .info .skillset p {
+  font-size: 1rem;
+}
+
+.projects__card .overlay .inner-overlay .info a {
+  font-size: 1rem;
+  background: #0D0D0B;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
 }
 
 .projects__card:hover .overlay {
